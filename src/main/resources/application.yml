@@ -6,8 +6,7 @@ management:
         enabled: true
       env:
         enabled: true
-    server:
-      port: 9292
+
     endpoints:
       web:
         exposure:
@@ -25,3 +24,7 @@ logging:
   level:
     hello.controller: debug
 
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
